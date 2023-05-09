@@ -702,3 +702,16 @@ textarea {
   to {
     opacity: 0;
     top: 27px; } }
+
+    .column {
+      float: left;
+      width: 50%;
+      padding: 5px;
+    }
+    
+    /* Clear floats after image containers */
+    .row::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
